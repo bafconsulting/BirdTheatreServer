@@ -1,0 +1,27 @@
+application {
+  config {
+    applicationType monolith,
+    baseName BirdTheatre,
+    packageName com.natureseyes.controller,
+    authenticationType oauth2,
+    buildTool maven,
+    databaseType sql,
+    devDatabaseType h2Disk,
+    prodDatabaseType mysql,
+    cacheProvider ehcache,
+    enableHibernateCache true,
+    clientFramework angularX,
+    useSass false,
+    enableTranslation true,
+    nativeLanguage en,
+    clientPackageManager npm,
+    jhiPrefix jhi,
+    enableSwaggerCodegen false,
+    messageBroker false,
+    searchEngine false,
+    serverPort 3000,
+    websocket false,
+    testFrameworks [protractor, cucumber, gatling],
+    serviceDiscoveryType eureka
+  }
+}

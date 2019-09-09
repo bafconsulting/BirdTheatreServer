@@ -1,0 +1,58 @@
+
+entity BroadcastStream {
+	/**
+	* The firstname attribute.
+    * language Language
+	*/
+	StreamName String,
+	StreamDescription String,
+	StartTimestamp ZonedDateTime,
+	EndTimestamp ZonedDateTime,
+
+}
+entity Upload {
+	/**
+	* The firstname attribute.
+    * language Language
+	*/
+	Image ImageBlob,
+	UploadTimestamp ZonedDateTime,
+}
+
+	service all with serviceClass
+	//service all with serviceImpl
+	//dto C with mapstruct
+	paginate * with pager
+	//service all with serviceImpl except A, B, C
+	//search A with elasticsearch
+	//paginate C with pagination
+	//paginate A with infinite-scroll
+	//paginate B with pagination
+	//paginate C with pager  // pager is only available in AngularJS
+	//service all with serviceImpl except Employee, Job
+	
+
+
+
+
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+//<OPTION> <ENTITIES | * | all> except? <ENTITIES>
+
+
+
+
+// Set pagination options
+//paginate ServerConfiguration, Profile with infinite-scroll
+//paginate Job with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
