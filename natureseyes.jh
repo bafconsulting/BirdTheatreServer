@@ -1,0 +1,90 @@
+application {
+  config {
+    applicationType monolith,
+    baseName BirdTheatre,
+    packageName com.natureseyes.controller,
+    authenticationType oauth2,
+    buildTool maven,
+    databaseType sql,
+    devDatabaseType h2Disk,
+    prodDatabaseType mysql,
+    cacheProvider ehcache,
+    enableHibernateCache true,
+    clientFramework angularX,
+    useSass false,
+    enableTranslation true,
+    nativeLanguage en,
+    clientPackageManager npm,
+    jhiPrefix jhi,
+    languages [en, fr, es],
+    enableSwaggerCodegen false,
+    messageBroker false,
+    searchEngine false,
+    serverPort 3000,
+    websocket false,
+    testFrameworks [protractor, cucumber, gatling],
+    serviceDiscoveryType eureka
+  }
+}
+
+entity BroadcastStream {
+	/**
+	* The firstname attribute.
+    * language Language
+	*/
+	StreamName String,
+	StreamDescription String,
+	StartTimestamp ZonedDateTime,
+	EndTimestamp ZonedDateTime,
+	language Language
+
+}
+entity Upload {
+	/**
+	* The firstname attribute.
+    * language Language
+	*/
+	Image ImageBlob,
+	UploadTimestamp ZonedDateTime,
+	language Language
+}
+
+	service all with serviceClass
+	//service all with serviceImpl
+	//dto C with mapstruct
+	paginate * with pager
+	//service all with serviceImpl except A, B, C
+	//search A with elasticsearch
+	//paginate C with pagination
+	//paginate A with infinite-scroll
+	//paginate B with pagination
+	//paginate C with pager  // pager is only available in AngularJS
+	//service all with serviceImpl except Employee, Job
+	
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+//<OPTION> <ENTITIES | * | all> except? <ENTITIES>
+
+
+
+
+
+// Set pagination options
+//paginate ServerConfiguration, Profile with infinite-scroll
+//paginate Job with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

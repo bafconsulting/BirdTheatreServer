@@ -5,7 +5,7 @@
     "baseName": "BirdTheatre",
     "packageName": "com.natureseyes.controller",
     "packageFolder": "com/natureseyes/controller",
-    "serverPort": 3000,
+    "serverPort": "3000",
     "serviceDiscoveryType": "eureka",
     "authenticationType": "oauth2",
     "uaaBaseName": "../uaa",
@@ -22,28 +22,16 @@
     "useSass": true,
     "clientPackageManager": "npm",
     "testFrameworks": [
-      "gatling",
+      "protractor",
       "cucumber",
-      "protractor"
+      "gatling"
     ],
     "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": [
-      "ar-ly",
-      "zh-tw",
       "en",
       "fr",
-      "de",
-      "hi",
-      "ja",
-      "ko",
-      "pt-pt",
-      "ru",
-      "es",
-      "sv",
-      "tr",
-      "th",
-      "vi"
+      "es"
     ],
     "clientFramework": "angularX",
     "jhiPrefix": "jhi",
@@ -52,9 +40,14 @@
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
-    "blueprints": []
+    "blueprints": [],
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": true,
+    "clientThemeVariant": ""
   },
   "git-provider": "GitHub",
   "git-company": "bafconsulting",
-  "repository-name": "BirdTheatreServer"
+  "repository-name": "BirdTheatreServer",
+  "entities": []
 }
