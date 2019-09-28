@@ -46,6 +46,8 @@ public class CacheConfiguration {
             createCache(cm, com.natureseyes.controller.domain.User.class.getName());
             createCache(cm, com.natureseyes.controller.domain.Authority.class.getName());
             createCache(cm, com.natureseyes.controller.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.natureseyes.controller.domain.BroadcastStream.class.getName());
+            createCache(cm, com.natureseyes.controller.domain.Upload.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

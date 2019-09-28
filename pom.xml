@@ -87,6 +87,13 @@
         <jacoco.itReportFile>${jacoco.reportFolder}/integrationTest.exec</jacoco.itReportFile>
         <junit.utReportFolder>${project.testresult.directory}/test</junit.utReportFolder>
         <junit.itReportFolder>${project.testresult.directory}/integrationTest</junit.itReportFolder>
+       
+         <!-- Spring social -->
+        <httpclient.version>4.5.1</httpclient.version>
+        <spring-social-security.version>1.1.2.RELEASE</spring-social-security.version>
+        <spring-social-google.version>1.0.0.RELEASE</spring-social-google.version>
+        <spring-social-facebook.version>2.0.3.RELEASE</spring-social-facebook.version>
+        <spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
         <!-- jhipster-needle-maven-property -->
     </properties>
 
@@ -331,6 +338,62 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-spring</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+			<groupId>com.google.api-client</groupId>
+			<artifactId>google-api-client</artifactId>
+			<version>1.21.0</version>
+		</dependency>
+		<dependency>
+	      <groupId>com.google.apis</groupId>
+	      <artifactId>google-api-services-youtube</artifactId>
+	      <version>v3-rev167-1.21.0</version>
+        </dependency>
+	     <dependency>
+	      <groupId>com.google.apis</groupId>
+	      <artifactId>google-api-services-vision</artifactId>
+	      <version>v1-rev424-1.25.0</version>
+	    </dependency>
+        <dependency>
+		  <groupId>org.facebook4j</groupId>
+		  <artifactId>facebook4j-core</artifactId>
+		  <version>[2.4,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.twitter4j</groupId>
+			<artifactId>twitter4j-core</artifactId>
+			<version>4.0.4</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.stripe</groupId>
+		  <artifactId>stripe-java</artifactId>
+		  <version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.53</version>
+		</dependency>
+		
+		        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-security</artifactId>
+            <version>${spring-social-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-google</artifactId>
+            <version>${spring-social-google.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-facebook</artifactId>
+            <version>${spring-social-facebook.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-twitter</artifactId>
+            <version>${spring-social-twitter.version}</version>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
     </dependencies>
